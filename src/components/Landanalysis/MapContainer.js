@@ -22,12 +22,9 @@ class MainMap extends Component {
           }
         ]
       };
-      // this.onClick = this.onClick.bind(this);
-    }
-    
-    componentDidMount(){
       this.onClick = this.onClick.bind(this);
     }
+    
   
     onClick(t, map, coord) {
       const { latLng } = coord;

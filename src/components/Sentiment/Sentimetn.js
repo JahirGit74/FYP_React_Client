@@ -59,19 +59,29 @@ const Sentiment = () => {
 
     return ( 
         <div>
-            <div>
-                <h1>Sentiment Analysis</h1>
+            <div className={senti.head}>
+                <h2>Sentiment Analysis</h2>
+                <br></br>
             </div>
             <div>
                 <div className={senti.search}>
-                    <input disabled={pending} type="text" placeholder="  Search here" value={keyword} onChange={(e)=>setKeyword(e.target.value)}/>
+                    <input disabled={pending} id ="mySearch" type="text" placeholder="  Search here" value={keyword} onChange={(e)=>setKeyword(e.target.value)}/>
+                    <div className={senti.clear}>
+                        <span onClick={() => { document.getElementById("mySearch").value = null; }}></span>
+                    </div>
                 </div>
-                <div>
-                    <p><br></br>Current val: {noOfTweets}</p>
-                    <p>{minNoOfTweets}</p>
+                
+                <br></br>
+                <div className={senti.range}>
+                    <p>Current val: {noOfTweets}</p>
+                    <div className={senti.mod}>
+                    <p1>{minNoOfTweets}</p1>
                     <input disabled={pending} type="range" max={maxNoOfTweets} min={minNoOfTweets}  value={noOfTweets} onChange={(e)=>setNoOfTweets(e.target.value)}/>
-                    <p>{maxNoOfTweets}</p>
+                    <p2> {maxNoOfTweets}</p2>
+                    </div>
                 </div>
+                <br></br>
+                <br></br>
                 <div className={senti.btn}>
                     <button disabled={pending} onClick={(e)=>analyse(e)}>
                         Analyse
@@ -81,14 +91,16 @@ const Sentiment = () => {
                 <br></br>
             </div>
             {(pending===false && data!=false) && <div>
-                <div>
+                <div className={senti.vote}>
+                <div className={senti.pos}>
                     <p>Posetive:{data.pos}</p>
                 </div>
-                <div>
+                <div className={senti.neu}>
                     <p>Neutral:{data.nut}</p>
                 </div>
-                <div>
+                <div className={senti.neg}>
                     <p>Negetive:{data.neg}</p>
+                </div>
                 </div>
                 <div>
                     <Piechart data={data}></Piechart>

@@ -75,7 +75,8 @@ const Inspection = () => {
 
     return ( 
         <div className="Inspection">
-            <h1>Damage Inspection</h1>
+            <br></br>
+            <h2>Damage Inspection</h2>
             {toggle==0 && <Input 
             selectedImages={selectedImages} 
             setselectedImages={setselectedImages}

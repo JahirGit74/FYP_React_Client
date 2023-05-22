@@ -6,7 +6,7 @@
     height: 35px;
     background: #fff;
     border-radius: 60px;
-    left :39%;
+    left :38%;
 
 }
 .search input{
@@ -15,23 +15,119 @@
     align-items: center;
     width: 320px;
     height: 30px;
+    top: 2px;
     background: #fff;
     border: blue;
     outline: none;
     overflow: hidden;
 }
 .btn button{
-    width: 60px;
-    height: 30px;
-    border-radius: 30px;
+    width: 70px;
+    height: 32px;
+    border-radius: 25px;
     color:black;
     background-color: rgb(120, 119, 120);
+    box-shadow: 5px 5px 10px rgba(249, 247, 247, 0.656),
+    -5px -5px 10px #fff,
+    inset 5px 5px 10px rgba(62, 44, 198, 0.363),
+    inset -5px -5px 5px rgba(165, 215, 244, 0.521);
     border: none;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
+    font-weight: 500;
     font-style: normal;
 } 
 .btn button:hover{
     color: white;
-    background-color: rgb(40, 40, 185);
+    background-color: #27a0ff;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+    -5px -5px 10px #fff,
+    inset 5px 5px 10px rgba(0,0,0,0.1),
+    inset -5px -5px 5px rgba(255,255,255,0.25);
 }
-
+.range{
+    top: 5px;
+    left: 39%;
+    height: 70px;
+    width: 350px;
+    background: transparent;
+    border-radius: 20px;
+    position: relative;
+    font-weight: 600;
+    
+}
+.range p{
+    top: 2px;
+    position: relative;
+}
+.mod{
+    bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+.mod p1{
+    left: -25px;
+    position: relative;
+}
+.mod p2{
+    right: -25px;
+    position: relative;
+}
+.mod input{
+    height: 3px;
+    width: 50%;
+}
+.head{
+    position: relative;
+    top: 6px;
+    bottom: 6px;
+}
+.clear{
+    position: absolute;
+    transform:translateY(-50%);
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    top: 33%;
+    left: 93%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clear ::before{
+     position: absolute;
+     content: '';
+     width:1px;
+     height: 15px;
+     background: black;
+     transform: rotate(45deg);
+}
+.clear ::after{
+    position: absolute;
+    content: '';
+    width:1px;
+    height: 15px;
+    background: black;
+    transform: rotate(315deg);
+}
+.pos{
+    color: rgb(97, 249, 97);
+}
+.neg{
+    color:red ;
+}
+.neu{
+    color: white;
+}
+.vote{
+    height: 59px;
+    width: 240px;
+    backdrop-filter: blur(80px);
+    position: relative;
+    left: 43%;
+    font-weight: 500;
+    top: 2px;
+}

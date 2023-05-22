@@ -1,0 +1,41 @@
+.para1{
+    height: 15rem;
+    width: 35rem;
+    background-color: transparent;
+    backdrop-filter: blur(80px);
+    border-radius: 15px;
+    border-width: 2px;
+    border: 2px solid blue;
+    left: 80px;
+    float: left;
+    position: relative;
+    color: black;
+}
+.para2{
+    height: 29rem;
+    width: 35rem;
+    float: right;
+    background-color: transparent;
+    backdrop-filter: blur(80px);
+    border-radius: 15px;
+    border-width: 2px;
+    border: 2px solid blue;
+    right: 80px;
+    position: relative;
+    color: black;
+}
+.para3{
+    height: 14rem;
+    width: 35rem;
+    background-color: transparent;
+    backdrop-filter: blur(80px);
+    border-radius: 15px;
+    border-width: 2px;
+    border: 2px solid blue;
+    left: 80px;
+    float: left;
+    top: 5px;
+    bottom: 1px;
+    position: relative;
+    color: black;
+}

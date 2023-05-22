@@ -1,0 +1,69 @@
+.Ubtn button {
+    position: relative;
+    right: -300px;
+    padding: 10px 25px;
+    border-radius: 6px;
+}
+
+.Ubtn label{
+    top: 40px;
+    left: 8%;
+    padding: 25px 60px;
+    background-color: rgb(164, 32, 32);
+    box-shadow: 5px 15px 25px black;
+    border-radius: 5px;
+    position: relative;
+    color: white;
+}
+
+.Ubtn span{
+    height: 10px;
+    width: 40px;
+    top: 45px;
+    left: 145px;
+    padding: 5px 10px;
+    background-color: transparent;
+    position: relative;
+}
+
+.imageContainer{
+    width: 70%;
+    padding: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 100px;
+    position: relative;
+
+}
+.all{
+    left: 60px;
+    position: relative;
+}
+.all span{
+    position: relative;
+    top: 140px;
+    left: -110px;
+    background-color: transparent;
+    font-weight:bold ;
+}
+.ph{
+     
+     justify-content: space-between;
+     position: relative;
+     padding: 10px 10px;
+}
+.ph img{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
+.ph button{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    top: -84%;
+    border-radius: 15px;
+}

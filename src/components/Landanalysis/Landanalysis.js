@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { MapContainer } from "./MapContainer";
 import Output from "./Output";
 import React from 'react'
+import LandA from "./Landanalysis.module.css"
 
 const Landanalysis = () => {
 
@@ -82,29 +83,39 @@ const Landanalysis = () => {
 
     return ( 
         <div className="Landanalysis">
+            <br></br>
             <h1>Land Analysis</h1>
             <div className="Landanalysis-body">
+                <br></br>
             {toggle==0 && <div className="Landanalysis-input">
-            <div>
+            <div className={LandA.dt1}>
                 <p>Start Date: </p>
                 <input required="true" type="date" onChange={(e)=>{setdate1(e.target.value)}} value={date1}/>
             </div>
-            <div>
+            <div className={LandA.dt2}>
                 <p>End Date: </p>
                 <input required="true" type="date" onChange={(e)=>{setdate2(e.target.value)}} value={date2}/>
             </div>
                 
                 
-                    
-                <div>
+                    <br></br>
+                    <br></br>
+                <div className={LandA.cord}>
                     Cordinates
                 </div>
-                <div className="ispection-input">
-                    <input required="true" type="number" name="longitude" className="longitude" placeholder="Longitude" 
+                <br></br>
+                <div className={LandA.cordi}>
+                    <div className={LandA.longitude}>
+                   <input id= "input1" required="true" type="number" name="longitude" className="longitude" placeholder="Longitude" 
                     onChange={(e)=>{setLongitude(e.target.value)}} value={longitude}/>
-                    <input required="true" type="number"  name="latitude" className="latitude" placeholder="Latitude"
+                    </div>
+                    <div className={LandA.latitude}>
+                    <input id = "input2" required="true" type="number"  name="latitude" className="latitude" placeholder="Latitude"
                     onChange={(e)=>{setLatitude(e.target.value)}} value={latitude}/>
-                    <input onClick={(e)=>submitinput(e)} type="submit"/>
+                    </div>
+                    <div className={LandA.btn}>
+                    <input id = "input3" claasName = "submit"onClick={(e)=>submitinput(e)} type="submit"/>
+                    </div>
                 </div>
                 <div>
                     <MapContainer latitude={latitude} longitude={longitude} setLatitude={setLatitude} setLongitude={setLongitude}></MapContainer>
