@@ -14,6 +14,8 @@
     "react-scripts": "^5.0.1",
     "recharts": "^2.6.2",
     "web-vitals": "^2.1.4"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
   },
   "homepage": "https://souvikbandyopadhyay.github.io/FYP_React_Client",
   "scripts": {
@@ -41,5 +43,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+    
   }
 }
