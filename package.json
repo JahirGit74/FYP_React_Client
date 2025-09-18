@@ -14,10 +14,8 @@
     "react-scripts": "^5.0.1",
     "recharts": "^2.6.2",
     "web-vitals": "^2.1.4"
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
   },
-  "homepage": "https://souvikbandyopadhyay.github.io/FYP_React_Client",
+  "homepage": "https://jahirgit74.github.io/FYP_React_Client",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build --legacy-peer-deps",
